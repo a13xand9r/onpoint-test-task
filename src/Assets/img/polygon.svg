@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.906" height="59.188" viewBox="0 0 46.906 59.188">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d1eaff;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-opacity: 0.35;
+        stroke-width: 4px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M262.949,690.543l-12.332,15-18.765,9.645-9.115-19.29-1.609-27.328L239.894,660l24.127,17.683Z" transform="translate(-219.125 -658)"/>
+</svg>

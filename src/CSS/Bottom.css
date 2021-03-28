@@ -1,0 +1,425 @@
+.bottom {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background: url(../Assets/img/Bottom.png);
+  }
+  .bottom__container{
+    display: flex;
+    height: 100vh;
+    width: 300vw;
+    transition: 0.6s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  .bottom__1 {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .bottom__2 {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .bottom__3 {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .bottom__line{
+      position: absolute;
+      bottom: 75px;
+      left: 193px;
+      width: 638px;
+      height: 13px;
+  }
+  .bottom__slider{
+    -webkit-appearance: none;
+    width: 600px;
+    height: 15px;
+    background: goldenrod;
+  }
+  .bottom__slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 50px;
+    height: 65px;
+    background: url(../Assets/img/polygon.svg) no-repeat;
+    background-size: contain;
+  }
+  .page1988, .page2009, .page2016{
+    position: relative;
+  }
+  .page1988__header, .page2009__header{
+    display: block;
+    margin-left: 115px;
+    margin-top: 80px;
+    font-size: 30px;
+    color: white;
+  }
+  .page1988__content{
+    width: 595px;
+    height: 355px;
+    margin: 0 auto;
+    margin-top: 65px;
+    position: relative;
+  }
+  .arrow{
+    position: absolute;
+  }
+  .page1988__lba{
+    top: 135px;
+    left: 95px;
+  }
+  .page1988__rba{
+    top: 135px;
+    right: 95px;
+  }
+  .page1988__ba{
+    top: 170px;
+    left: 295px;
+  }
+  .page1988__ra{
+    width: 50px;
+    top: 295px;
+    left: 95px;
+  }
+  .page1988__la{
+    width: 50px;
+    top: 295px;
+    right: 95px;
+  }
+  .page1988__container{
+    height: 185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .page1988__hyperglycemia{
+    width: 298px;
+    height: 90px;
+    align-self: flex-end;
+    border: 1px white solid;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 85px;
+  }
+  .page1988__1{
+    margin: 0 auto;
+  }
+  .page1988__2{
+    margin-top: 18px;
+  }
+  .page1988__3{
+    margin-top: 18px;
+  }
+
+  .field{
+    width: 100px;
+  }
+  .field__number{
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .field__text{
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+  }
+  .field__circle{
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 66px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+  }
+  .field__img{
+    padding-top: 15px;
+  }
+  .little{
+    position: absolute;
+    width: 45px;
+    opacity: 0.4;
+  }
+  .middle{
+    position: absolute;
+    width: 115px;
+    opacity: 0.4;
+  }
+  .big{
+    position: absolute;
+    width: 210px;
+    opacity: 0.3;
+  }
+  .page1988__ice1{
+    top: 110px;
+    left: 915px;
+  }
+  .page1988__ice2{
+    top: 225px;
+    left: 660px;
+  }
+  .page1988__ice3{
+    top: 550px;
+    left: 25px;
+  }
+  .page2009__ice1{
+    top: 90px;
+    left: 475px;
+  }
+  .page2009__ice2{
+    top: 235px;
+    left: 45px;
+  }
+  .page2009__ice3{
+    top: 570px;
+    left: 895px;
+  }
+  .page2016__ice1{
+    top: 105px;
+    left: -10px;
+  }
+  .page2016__ice2{
+    top: 210px;
+    left: 935px;
+  }
+  .page2016__ice3{
+    top: 585px;
+    left: 160px;
+  }
+  .page2009__content{
+    position: relative;
+    height: 475px;
+    width: 770px;
+    margin: 0 auto;
+  }
+  .page2009__container1{
+    margin-right: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .page2009__23{
+    min-width: 165px;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+  }
+  .page2009__23_right{
+    margin-left: 10px;
+    min-width: 165px;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+  }
+  .page2009__number{
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .page2009__number_right{
+    display: block;
+    margin: 0;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .page2009__number_left{
+    display: block;
+    margin: 0;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .page2009__text{
+    display: block;
+    max-width: 160px;
+    word-wrap: break-word;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  .page2009__defect{
+    align-self: center;
+  }
+  .page2009__text_right{
+    display: block;
+    max-width: 160px;
+    word-wrap: break-word;
+    margin: 0;
+    align-self: center;
+    margin-right: 10px;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  .page2009__text_thin{
+    display: block;
+    max-width: 90px;
+    word-wrap: break-word;
+    margin: 0;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  .page2009__text_thin-center{
+    display: block;
+    max-width: 90px;
+    word-wrap: break-word;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  .page2009__kidneys{
+    margin-top: 15px;
+    margin-right: -39px;
+    text-align: right;
+  }
+  .page2009__fat-cells{
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .page2009__circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 58px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+  }
+  .page2009__circle_muscle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 58px;
+    text-align: center;
+    line-height: 53px;
+    color: white;
+  }
+  .page2009__circle23{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+  }
+  .page2009__container2{
+    margin-top: 32px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page2009__hyperglycemia{
+    width: 390px;
+    height: 142px;
+    margin-left: -38px;
+    align-self: flex-end;
+    border: 1px white solid;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 130px;
+  }
+  .page2009__container3{
+    width: 430px;
+    margin-left: 160px;
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .page2009__img-liver{
+    width: 45px;
+  }
+  .page2009__img-muscle{
+    width: 53px;
+  }
+  .page2009__ba1{
+    top: 135px;
+    left: 235px;
+  }
+  .page2009__ba2{
+    top: 135px;
+    left: 375px;
+  }
+  .page2009__ba3{
+    top: 135px;
+    left: 535px;
+  }
+  .page2009__ua1{
+    top: 315px;
+    left: 237px;
+  }
+  .page2009__ua2{
+    top: 315px;
+    left: 382px;
+  }
+  .page2009__ua3{
+    top: 315px;
+    left: 518px;
+  }
+  .page2009__ra2{
+    top: 235px;
+    left: 138px;
+  }
+  .page2009__la2{
+    top: 228px;
+    left: 565px;
+  }

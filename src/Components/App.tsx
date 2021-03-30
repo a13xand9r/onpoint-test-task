@@ -20,17 +20,26 @@ const App = () => {
       endY < startY ? page < 2 && setPage(page + 1)
         : page > 0 && setPage(page - 1)
   }
-  const style = {transform: `translateY(-${page * 100}vh)`}
+  const style = { transform: `translateY(-${page * 100}vh)` }
   console.log('render')
   return (
     <div className="container">
-      <div className="App" style={style}
+      <div className="app" style={style}
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}>
         <Top />
         <Center />
         <Bottom />
       </div>
+      <div className="container__pages">
+        <div className={`container__page${page === 0 ? '_current' : ''}`}></div>
+        <div className={`container__page${page === 1 ? '_current' : ''}`}></div>
+        <div className={`container__page${page === 2 ? '_current' : ''}`}></div>
+      </div>
+      {page === 0 && <div className="container__down">
+        <p>Листайте вниз</p>
+        <div></div>
+      </div>}
     </div>
   );
 }

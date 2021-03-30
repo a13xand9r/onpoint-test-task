@@ -1,5 +1,5 @@
 .second {
-    height: 100vh;
+    height: 768px;
     background: url(../Assets/img/Center.png);
     display: flex;
     justify-content: center;
@@ -7,12 +7,12 @@
     position: relative;
 }
 .second__header{
-    width: 430px;
+    width: 480px;
     word-wrap: break-word;
     text-align: center;
     margin-bottom: 150px;
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'GothamPro', sans-serif;
     font-weight: regular;
     font-size: 50px;
 }

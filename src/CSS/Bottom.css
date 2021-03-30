@@ -1,6 +1,6 @@
 .bottom {
-    height: 100vh;
-    width: 100vw;
+    height: 768px;
+    width: 1024px;
     overflow: hidden;
     display: flex;
     position: relative;
@@ -13,18 +13,18 @@
     transition: 0.6s cubic-bezier(0.5, 0, 0.5, 1);
   }
   .bottom__1 {
-    height: 100vh;
-    width: 100vw;
+    height: 768px;
+    width: 1024px;
     overflow: hidden;
   }
   .bottom__2 {
-    height: 100vh;
-    width: 100vw;
+    height: 768px;
+    width: 1024px;
     overflow: hidden;
   }
   .bottom__3 {
-    height: 100vh;
-    width: 100vw;
+    height: 768px;
+    width: 1024px;
     overflow: hidden;
   }
   .bottom__line{
@@ -51,6 +51,7 @@
   }
   .page1988__header, .page2009__header, .page2016__header{
     display: block;
+    font-family: 'GothamPro', sans-serif;
     margin-left: 115px;
     margin-top: 80px;
     font-size: 30px;
@@ -321,7 +322,7 @@
     height: 60px;
     border-radius: 50%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 9px;
     background-color: rgba(255, 255, 255, 0.2);
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -397,7 +398,7 @@
   }
   .page2009__ba2{
     top: 135px;
-    left: 375px;
+    left: 376px;
   }
   .page2009__ba3{
     top: 135px;

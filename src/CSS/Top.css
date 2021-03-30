@@ -1,5 +1,5 @@
 .top {
-    height: 100vh;
+    height: 768px;
     background: url(../Assets/img/mountains.png) no-repeat;
     position: relative;
 }
@@ -13,7 +13,7 @@
     text-align: left;
     margin: 0;
     color: #0d319c;
-    font-family: 'Lato', sans-serif;
+    font-family: 'GothamPro', sans-serif;
     font-weight: regular;
     font-size: 45px;
 }
@@ -75,4 +75,41 @@
         transform: scale(1);
         background-color: #cf84597e;
     }
+}
+
+.top__text1{
+    margin: 0;
+    position: absolute;
+    top: 270px;
+    left: 630px;
+    color: #0d319c;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.top__text2{
+    margin: 0;
+    position: absolute;
+    top: 395px;
+    left: 224px;
+    color: #0d319c;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.top__text3{
+    margin: 0;
+    position: absolute;
+    top: 504px;
+    left: 374px;
+    color: #0d319c;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.top__text4{
+    margin: 0;
+    position: absolute;
+    top: 480px;
+    left: 790px;
+    color: #0d319c;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }

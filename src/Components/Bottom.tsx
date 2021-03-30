@@ -69,7 +69,6 @@ export const Bottom = memo(() => {
     if (sliderValue < 25 && slide !== Slide.FIRST) setSlide(Slide.FIRST)
     if (75 >= sliderValue  && sliderValue >= 25  && slide !== Slide.SECOND) setSlide(Slide.SECOND)
   }, [sliderValue, slide])
-  console.log('render bottom')
   return (
     <div className="bottom">
       <div className="bottom__container" style={stylePageStyle}>

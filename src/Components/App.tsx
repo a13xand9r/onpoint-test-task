@@ -21,7 +21,6 @@ const App = () => {
         : page > 0 && setPage(page - 1)
   }
   const style = { transform: `translateY(-${page * 100}vh)` }
-  console.log('render')
   return (
     <div className="container">
       <div className="app" style={style}

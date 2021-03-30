@@ -1,4 +1,37 @@
 .second {
     height: 100vh;
     background: url(../Assets/img/Center.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.second__header{
+    width: 430px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-bottom: 150px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: regular;
+    font-size: 50px;
+}
+.ice{
+    position: absolute;
+}
+.second__ice1{
+    left: 80px;
+    top: 160px;
+}
+.second__ice2{
+    left: 715px;
+    top: 590px;
+}
+.second__ice3{
+    left: 233px;
+    top: 443px;
+}
+.second__ice4{
+    left: 880px;
+    top: 40px;
 }

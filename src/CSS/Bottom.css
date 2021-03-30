@@ -38,8 +38,6 @@
     -webkit-appearance: none;
     width: 600px;
     height: 15px;
-    /* background: linear-gradient(90deg, #d1eaff 90%, #435063 60%); */
-    /* background: goldenrod; */
   }
   .bottom__slider::-webkit-slider-thumb{
     -webkit-appearance: none;
@@ -48,12 +46,6 @@
     background: url(../Assets/img/polygon.svg) no-repeat;
     background-size: contain;
   }
-  /* input[type='range']::-webkit-slider-runnable-track {
-    height: 10px;
-    -webkit-appearance: none;
-    color: #13bba4;
-    margin-top: -1px;
-  } */
   .page1988, .page2009, .page2016{
     position: relative;
   }

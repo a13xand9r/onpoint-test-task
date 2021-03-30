@@ -1,4 +1,78 @@
-.first {
+.top {
     height: 100vh;
     background: url(../Assets/img/mountains.png) no-repeat;
+    position: relative;
+}
+.top__header{
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: 72px;
+    width: 600px;
+    word-wrap: break-word;
+    text-align: left;
+    margin: 0;
+    color: #0d319c;
+    font-family: 'Lato', sans-serif;
+    font-weight: regular;
+    font-size: 45px;
+}
+.circle1{
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    border: #d6462a solid 2px;
+    top: 257px;
+    left: 556px;
+}
+.circle2{
+    position: absolute;
+    top: 425px;
+    left: 270px;
+    width: 30px;
+    height: 30px;
+    border: #d6462a solid 2px;
+    border-radius: 50%;
+}
+.circle3{
+    position: absolute;
+    top: 537px;
+    left: 477px;
+    width: 17px;
+    height: 17px;
+    border: #d6462a solid 2px;
+    border-radius: 50%;
+}
+.circle4{
+    position: absolute;
+    top: 514px;
+    left: 818px;
+    width: 18px;
+    height: 18px;
+    border: #d6462a solid 2px;
+    border-radius: 50%;
+}
+.top__circle-animation1{
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+.top__circle-animation2{
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes circle {
+    from{
+        transform: scale(0);
+        background-color: #cf8459;
+    }
+    to{
+        transform: scale(1);
+        background-color: #cf84597e;
+    }
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { memo, useEffect, useState } from 'react'
 import { Styles } from './App'
 import littleIce from '../Assets/img/ice_copy.png'
 import middleIce from '../Assets/img/ice_copy_2.png'
@@ -8,6 +8,9 @@ import liver from '../Assets/img/liver_1.png'
 import brain from '../Assets/img/brain.png'
 import lipid from '../Assets/img/lipid.png'
 import lipid2 from '../Assets/img/lipid copy.png'
+import stomach from '../Assets/img/stomach.png'
+import infection from '../Assets/img/infection.png'
+import brain2 from '../Assets/img/brain1_copy.png'
 import arrowLeftBottom from '../Assets/img/Rectangle 11 copy 26.png'
 import arrowBottom from '../Assets/img/Rectangle 11 copy 33.png'
 import arrowRight from '../Assets/img/Rectangle 11 copy 36.png'
@@ -19,10 +22,17 @@ import arrowLeft2 from '../Assets/img/Rectangle 11 copy 28.png'
 import arrowUp2 from '../Assets/img/Rectangle 11 copy 34.png'
 import '../CSS/Bottom.css'
 
-export const Bottom = () => {
-  const [styleLine, setStyleLine] = useState<Styles>({})
+enum Slide{
+  FIRST = 0,
+  SECOND = -1,
+  THIRD = -2
+}
+
+export const Bottom = memo(() => {
   const [slide, setSlide] = useState(Slide.THIRD)
   const [sliderValue, setSliderValue] = useState(100)
+  const styleSlider: Styles = {background: `linear-gradient(90deg, #d1eaff ${sliderValue}%, #435063 ${0}%)`}
+  const stylePageStyle: Styles = { transform: `translateX(${slide * 100}vw)` }
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) =>
     setSliderValue(+e.currentTarget.value)
 
@@ -55,16 +65,14 @@ export const Bottom = () => {
       }, 10)
   }
   useEffect(() => {
-    setStyleLine({ transform: `translateX(${slide * 100}vw)` })
-  }, [slide])
-  useEffect(() => {
     if (sliderValue > 75 && slide !== Slide.THIRD) setSlide(Slide.THIRD)
     if (sliderValue < 25 && slide !== Slide.FIRST) setSlide(Slide.FIRST)
     if (75 >= sliderValue  && sliderValue >= 25  && slide !== Slide.SECOND) setSlide(Slide.SECOND)
-  }, [sliderValue])
+  }, [sliderValue, slide])
+  console.log('render bottom')
   return (
     <div className="bottom">
-      <div className="bottom__container" style={styleLine}>
+      <div className="bottom__container" style={stylePageStyle}>
         <div className="bottom__1 page1988">
           <img src={littleIce} alt="" className="page1988__ice1 little"/>
           <img src={middleIce} alt="" className="page1988__ice2 middle"/>
@@ -186,20 +194,146 @@ export const Bottom = () => {
           <img src={littleIce} alt="" className="page2016__ice1 little"/>
           <img src={middleIce} alt="" className="page2016__ice2 middle"/>
           <img src={bigIce}    alt="" className="page2016__ice3 big"/>
+          <p className="page2016__header">Звенья патогенеза СД2</p>
+          <div className="page2016__content">
+            <div className="page2016__arrow1 arrow-c"></div>
+            <div className="page2016__arrow2 arrow-c"></div>
+            <div className="page2016__arrow3 arrow-c"></div>
+            <div className="page2016__arrow4 arrow-c"></div>
+            <div className="page2016__arrow5 arrow-c"></div>
+            <div className="page2016__arrow6 arrow-c"></div>
+            <div className="page2016__arrow7 arrow-c"></div>
+            <div className="page2016__arrow8 arrow-c"></div>
+            <div className="page2016__arrow9 arrow-c"></div>
+            <div className="page2016__arrow10 arrow-c"></div>
+            <div className="page2016__arrow11 arrow-c"></div>
+            <div className="page2016__arrow12 arrow-c"></div>
+            <div className="page2016__arrow13 arrow-c"></div>
+            <div className="page2016__arrow14 arrow-c"></div>
+            <div className="page2016__arrow15 arrow-c"></div>
+            <div className="page2016__arrow16 arrow-c"></div>
+            <div className="page2016__arrow17 arrow-c"></div>
+            <div className="page2016__arrow18 arrow-c"></div>
+            <div className="page2016__arrow19 arrow-c"></div>
+            <div className="page2016__arrow20 arrow-c"></div>
+            <div className="page2016__arrow21 arrow-c"></div>
+            <div className="page2016__arrow22 arrow-c"></div>
+            <div className="page2016__left-side">
+              <div className="page2016__8 circle-filed">
+                <div>
+                  <p className="circle-filed__number">8</p>
+                  <p className="circle-filed__text">Микрофлора
+                    кишечника</p>
+                </div>
+                <div className="circle-field__circle">
+                  <img src={brain2} alt=""/>
+                </div>
+              </div>
+              <div className="page2016__9 circle-filed">
+                <div>
+                  <p className="circle-filed__number">9</p>
+                  <p className="circle-filed__text">Нарушение иммунной
+                  регуляции/воспаление</p>
+                </div>
+                <div className="circle-field__circle">
+                  <img src={infection} alt=""/>
+                </div>
+              </div>
+              <p className="page2016__amylin">↓ амилин</p>
+              <div className="page2016__10 circle-filed">
+                <div>
+                  <p className="circle-filed__number">10</p>
+                  <p className="circle-filed__text">Желудок</p>
+                </div>
+                <div className="circle-field__circle">
+                  <img src={stomach} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="page2016__center">
+              <div className="page2016__1 circle-filed">
+                <div className="circle-filed__flex-container">
+                  <p className="circle-filed__number">1</p>
+                  <p className="circle-filed__text">&beta;-клетки</p>
+                </div>
+                <div className="circle-field__circle">
+                  &beta;
+                </div>
+              </div>
+              <div className="page2016__23">
+                <div className="page2016__2">
+                  <p className="page2016__number">2</p>
+                  <p className="page2016__text">↓ инкретинового
+                  эффекта</p>
+                </div>
+                <div className="page2016__3">
+                  <p className="page2016__number">3</p>
+                  <p className="page2016__text">Дефект α-клеток</p>
+                </div>
+              </div>
+              <p className="page2016__glucogan">↑ глюкагон</p>
+              <p className="page2016__hyperglycemia">Гипергликимия</p>
+              <div className="page2016__11 circle-filed">
+                <div>
+                  <p className="circle-filed__number">11</p>
+                  <p className="circle-filed__text">Почки</p>
+                </div>
+                <div className="circle-field__circle">
+                  <img src={lipid2} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="page2016__right-side">
+              <div className="page2016__7 circle-filed">
+                <div className="circle-field__circle">
+                  <img src={brain} alt="" />
+                </div>
+                <div>
+                  <p className="circle-filed__number">7</p>
+                  <p className="circle-filed__text">Головной мозг</p>
+                </div>
+              </div>
+              <div className="page2016__654 container654">
+                <p className="container654__header">Инсулинорезистентность</p>
+                <div className="container654__6 circle-filed">
+                  <div className="circle-field__circle">
+                    <img src={liver} alt="" />
+                  </div>
+                  <div>
+                    <p className="circle-filed__number">6</p>
+                    <p className="circle-filed__text">Печень</p>
+                  </div>
+                </div>
+                <div className="container654__5 circle-filed">
+                  <div className="circle-field__circle">
+                    <img src={muscle} alt="" />
+                  </div>
+                  <div>
+                    <p className="circle-filed__number">5</p>
+                    <p className="circle-filed__text">Мышцы</p>
+                  </div>
+                </div>
+                <div className="container654__4 circle-filed">
+                  <div className="circle-field__circle">
+                    <img src={lipid} alt="" />
+                  </div>
+                  <div>
+                    <p className="circle-filed__number">4</p>
+                    <p className="circle-filed__text">Жировые клетки</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="bottom__line">
         <input className="bottom__slider" type="range" min="0" max="100" step="1"
           onChange={onChangeHandler}
           value={sliderValue}
-          onTouchEnd={onTouchEndHandler} />
+          onTouchEnd={onTouchEndHandler}
+          style={styleSlider} />
       </div>
     </div>
   )
-}
-
-enum Slide{
-  FIRST = 0,
-  SECOND = -1,
-  THIRD = -2
-}
+})

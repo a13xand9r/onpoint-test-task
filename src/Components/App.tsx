@@ -20,7 +20,7 @@ const App = () => {
       endY < startY ? page < 2 && setPage(page + 1)
         : page > 0 && setPage(page - 1)
   }
-  const style = { transform: `translateY(-${page * 100}vh)` }
+  const style = { transform: `translateY(-${page * 768}px)` }
   return (
     <div className="container">
       <div className="app" style={style}

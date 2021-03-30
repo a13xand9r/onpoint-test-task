@@ -32,7 +32,7 @@ export const Bottom = memo(() => {
   const [slide, setSlide] = useState(Slide.THIRD)
   const [sliderValue, setSliderValue] = useState(100)
   const styleSlider: Styles = {background: `linear-gradient(90deg, #d1eaff ${sliderValue}%, #435063 ${0}%)`}
-  const stylePageStyle: Styles = { transform: `translateX(${slide * 100}vw)` }
+  const stylePageStyle: Styles = { transform: `translateX(${slide * 1024}px)` }
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) =>
     setSliderValue(+e.currentTarget.value)
 

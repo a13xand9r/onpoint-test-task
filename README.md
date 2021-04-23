@@ -1,4 +1,6 @@
 # Тестовое задание
+https://sergeyguns.github.io/onpoint-task/ 
+
 https://www.youtube.com/watch?v=bH9zEDcMlBA&t=4s
 
 ## Demo:
